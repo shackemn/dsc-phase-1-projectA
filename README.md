@@ -30,7 +30,7 @@ In order for Microsoft to make the right decisions, I decided to look at current
 
 After cleaning the data from the bom.movie_gross file, I added a new column summing up the domestic and foreign gross. I then used pandas to group by studio to show the sum of total gross revenue. Then I visualized the data.
 
-![Studio_Gross.png].(https://github.com/shackemn/dsc-phase-1-projectA/blob/master/images/Studio_Gross.png)
+![Studio_Gross.png](https://github.com/shackemn/dsc-phase-1-projectA/blob/master/images/Studio_Gross.png)
 
 The Gross Revenue is measured in the billions, so the majority of the top 10 studios had over a billion dollar revenue from their movies. This shows that this venture is a worthwhile project and which movie studios they should emulate.
 
@@ -40,7 +40,7 @@ The Gross Revenue is measured in the billions, so the majority of the top 10 stu
 
 In order to answer this question, I cleaned and joined the imdb.title.basics and tn.movie_budgets tables. The genres in the "basics" table needed to be split into a list in order to work with the data. The "budgets" table had all of their monetary values entered as strings including dollar signs and commas. I had to remove those and change the type into floats before I could work with the data. After doing these things I calculated the ROI for each entry using the worldwide_gross and production_budget. I then removed some outliers using the IQR method. Then I grouped the data by genre and calculated the mean of those genres. 
 
-![Genres_ROI.png].(https://github.com/shackemn/dsc-phase-1-projectA/blob/master/images/Genres_ROI.png)
+![Genres_ROI.png](https://github.com/shackemn/dsc-phase-1-projectA/blob/master/images/Genres_ROI.png)
 
 This visualization shows that the highest return on investments come from the Animation and Sci-fi genres though there were several that were relavtively high. This data will help Microsoft choose what types of movies they should focus on first for their first venture into the movie industry. Note that almost all movies have more than one genre, and a combination between some of the highest ranking genres should probably be chosen.
 
@@ -49,7 +49,7 @@ This visualization shows that the highest return on investments come from the An
 To answer this question I had to join and clean several different tables including: imdb.title.basics, imdb.title.ratings, imdb.name.basics, 
 and imdb.title.principals. I dropped many columns and rows, so I could focus on the directors and ratings themselves. After this was done I found the highest rated directors using their averaged ratings across their movies. I first had to filter out some of the data. For instace, some of the directors had a perfect 10/10 rating due to the fact that they had a total of 5 votes. I chose only to take the 10 directos who had the highest number of votes(the higest had 499,479 for reference). I then grouped the data my director and calculated the mean rating for each of them. 
 
-![Director_Ratings.png].(https://github.com/shackemn/dsc-phase-1-projectA/blob/master/images/Director_Ratings.png)
+![Director_Ratings.png](https://github.com/shackemn/dsc-phase-1-projectA/blob/master/images/Director_Ratings.png)
 
 This visualization shows that the top directors are very highly rated from people. Microsoft should consider hiring one of these directors in order to not only interest people to come see the movies, but also increase the chance of the movies' success. 
 
